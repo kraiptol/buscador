@@ -26,8 +26,21 @@
             width: 32px;
             padding: 4px;
             margin-left: 10px;
-            border-radius: 30%;
-            @include borde;
+            border-radius: 50%;
+            background-color: $colorFondo;
+        }
+    }
+    &__iniciarSesion{
+        input[type="submit"]{
+            height: 30px;
+            width: 90px;
+            color: white;
+            padding-right: 5px;
+            background-color: darkgray;
+            display: block;
+            text-align: center;
+            border-radius: 7px;
+            overflow: hidden;
         }
     }
 

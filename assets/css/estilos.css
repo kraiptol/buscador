@@ -33,8 +33,19 @@
   width: 32px;
   padding: 4px;
   margin-left: 10px;
-  border-radius: 30%;
-  border: 1px solid black;
+  border-radius: 50%;
+  background-color: #eeeeee;
+}
+.header__iniciarSesion input[type=submit] {
+  height: 30px;
+  width: 90px;
+  color: white;
+  padding-right: 5px;
+  background-color: darkgray;
+  display: block;
+  text-align: center;
+  border-radius: 7px;
+  overflow: hidden;
 }
 
 .main {
