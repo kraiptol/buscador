@@ -1,0 +1,19 @@
+include configuraciones.pug
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        link(rel="stylesheet", href="../assets/css/estilos.css")
+    body
+        header.header
+            if usuario
+                .header__perfil
+                    ul
+                        each enlace in enlaces
+                            li 
+                                a(href="")=enlace
+                    img(src="../assets/img/user.png", alt="")
+            else
+                .header__iniciarSesion
+                    input(type="submit", value="Registrate")
+        block headerPlantilla

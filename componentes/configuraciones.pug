@@ -1,0 +1,11 @@
+-var enlaces = ["Gmail","Imagenes"];
+-var imagenes = ["caja.png"];
+-var usuario = "Kraiptol";
+-var colorFondo = "rgba(238,238,238,1)";
+
+
+mixin caja(ubicacion, imagen, etiqueta, parrafo)
+    .icono
+        a(href="")
+            img(src=ubicacion+imagen, alt=etiqueta)
+            p=parrafo

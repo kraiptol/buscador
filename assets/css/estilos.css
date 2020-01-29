@@ -1,0 +1,104 @@
+/*Variables*/
+/*Mixin*/
+/*Estilos Generales*/
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 48px;
+  padding: 8px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header__perfil {
+  height: 48px;
+  width: 230px;
+  display: flex;
+  align-items: center;
+}
+.header__perfil li {
+  list-style: none;
+  display: inline;
+}
+.header__perfil li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  margin: 0px 10px 0px 10px;
+}
+.header__perfil img {
+  height: 32px;
+  width: 32px;
+  padding: 4px;
+  margin-left: 10px;
+  border-radius: 30%;
+  border: 1px solid black;
+}
+
+.main {
+  height: 238px;
+  width: 100%;
+  margin-top: 25px;
+}
+.main__logo {
+  width: 100%;
+  height: 238px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__logo img {
+  height: 92px;
+  width: 276px;
+}
+.main__buscador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+}
+.main__buscador input[type=text] {
+  height: 40px;
+  width: 537px;
+  border-radius: 50px;
+  border: 0.3px;
+  box-shadow: 0.5px 0.5px 8px grey;
+  padding: 20px;
+}
+.main__iconos {
+  height: 266px;
+  width: 100%;
+  margin-top: 35px;
+  display: block;
+  justify-content: center;
+}
+.main__iconos--caja1, .main__iconos--caja2 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.main__iconos--caja1 .icono, .main__iconos--caja2 .icono {
+  height: 112px;
+  width: 112px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+.main__iconos--caja1 .icono img, .main__iconos--caja2 .icono img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50px;
+  padding: 4px;
+  background-color: #eeeeee;
+}
+.main__iconos--caja1 .icono p, .main__iconos--caja2 .icono p,
+.main__iconos--caja1 .icono a,
+.main__iconos--caja2 .icono a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: gray;
+}

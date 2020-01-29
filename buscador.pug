@@ -1,0 +1,20 @@
+extend componentes/header.pug 
+block headerPlantilla
+
+    section.main
+        .main__logo
+            img(src="assets/img/google.png", alt="google logo")
+        .main__buscador
+            input(type="text",placeholder="Introduce el contenido que deseas buscar")
+        if usuario
+            .main__iconos
+                .main__iconos--caja1
+                    +caja("assets/img/","caja.png","caja","google")
+                    +caja("assets/img/","linux.png","caja","google")
+                    +caja("assets/img/","emoji.png","caja","google")
+                .main__iconos--caja2
+                    +caja("assets/img/","mario.png","caja","google")
+                    +caja("assets/img/","rosa.png","caja","google")
+                    +caja("assets/img/","luz.jpg","caja","google")
+    
+    include componentes/footer.pug

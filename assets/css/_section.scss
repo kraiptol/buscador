@@ -1,0 +1,76 @@
+.main {
+    height: 238px;
+    width: 100%;
+    margin-top: 25px;
+    
+    &__logo {
+        width: 100%;
+        height: 238px;
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            height: 92px;
+            width: 276px;
+        }
+    }
+
+    &__buscador {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 30px;
+
+        input[type="text"]{
+            height: 40px;
+            width: 537px;
+            border-radius: 50px;
+            border: 0.3px;
+            box-shadow: 0.5px 0.5px 8px grey;
+            padding: 20px;
+        }
+    }
+
+    &__iconos{
+        height: 266px;
+        width: 100%;
+        margin-top: 35px;
+        display: block;
+        justify-content: center;
+        
+        &--caja1{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            .icono{
+                height: 112px;
+                width: 112px;
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: center;
+                img{
+                    height: 48px;
+                    width: 48px;
+                    border-radius: 50px;
+                    padding: 4px;
+                    background-color: $colorFondo;
+                }
+                p,
+                a {
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    color: gray;
+                    
+                }
+            }
+        }
+        &--caja2{
+            @extend .main__iconos--caja1;
+            
+        }
+    }
+
+
+}

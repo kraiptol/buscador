@@ -1,0 +1,18 @@
+/*Variables*/
+$colorFondo: rgba(238,238,238,1);
+
+
+/*Mixin*/
+@mixin borde {
+    border: 1px solid black;
+}
+
+
+/*Estilos Generales*/
+*{
+    box-sizing: border-box;
+}
+body{
+    
+}
+
