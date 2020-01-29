@@ -3,7 +3,7 @@ doctype html
 html(lang="es")
     head
         meta(charset="UTF-8")
-        link(rel="stylesheet", href="../assets/css/estilos.css")
+        link(rel="stylesheet", href="assets/css/estilos.css")
     body
         header.header
             if usuario
@@ -12,7 +12,7 @@ html(lang="es")
                         each enlace in enlaces
                             li 
                                 a(href="")=enlace
-                    img(src="assets/img/linux.png", alt="")
+                    img(src="assets/img/rosa.png", alt="rosa perfil")
             else
                 .header__iniciarSesion
                     input(type="submit", value="Registrate")
